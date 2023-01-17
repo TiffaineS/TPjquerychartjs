@@ -54,6 +54,7 @@ new Chart(ctx, {
       data: [7, 8, 10, 20, 19, 14],
       borderWidth: 1
     },{
+      type: 'bar', 
       label: "Moyenne de toutes les notes pour une matière",
       data: [matiere1, matiere2, matiere3, matiere4, matiere5, matiere6],
       borderWidth: 1
@@ -77,4 +78,55 @@ new Chart(ctx, {
 });
 
 
+
+const ctx2 = document.getElementById('chart2');
+
+new Chart(ctx2, {
+  type: 'bar',
+  data: {
+    labels: ['Eleve 1', 'Eleve 2', 'Eleve 3'],
+    datasets: [{
+      type: 'bar',
+      label: "Mathématiques",
+      data: [12, 16, 7],
+      borderWidth: 1,
+    }, {
+      type: 'bar',
+      label: "Français",
+      data: [19, 8, 8],
+      borderWidth: 1
+    },{
+      type: 'bar',
+      label: "Histoire/Géographie",
+      data: [3, 4, 10],
+      borderWidth: 1
+    },{
+      type: 'bar',
+      label: "Physique/Chimie",
+      data: [15,11,20],
+      borderWidth: 1
+    },{
+      type: 'bar',
+      label: "Anglais",
+      data: [2,12,19],
+      borderWidth: 1
+    },{
+      type: 'bar',
+      label: "Espagnol",
+      data: [6, 17, 14],
+      borderWidth: 1
+    }
+  ]
+  },
+  options: {
+    layout: {
+      padding: 10
+  },
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
 
