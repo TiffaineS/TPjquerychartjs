@@ -33,7 +33,6 @@ let matiere6 = (6 + 17 + 14)/3;
 
 
 const ctx = document.getElementById('chart');
-
 new Chart(ctx, {
   type: 'bar',
   data: {
@@ -78,9 +77,7 @@ new Chart(ctx, {
 });
 
 
-
 const ctx2 = document.getElementById('chart2');
-
 new Chart(ctx2, {
   type: 'bar',
   data: {
