@@ -1,0 +1,56 @@
+body {
+    text-align: center;
+}
+
+#slider {
+    width: 536px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+#slide1, #slide2, #slide3, #slide4, #slide5, #slide6, #slide7, #slide8, #slide9, #slide10, #slide11, #slide12, #slide13, #slide14, #slide15 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#slide2, #slide3, #slide4, #slide5, #slide6, #slide7, #slide8, #slide9, #slide10, #slide11, #slide12, #slide13, #slide14, #slide15 {
+    display: none;
+}
+
+#precedent, #suivant {
+    z-index: 1;
+    transition: opacity 0.5s ease;
+    font-size: 12px;
+    font-weight: 100;
+    position: absolute;
+    top: 155px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgb(220, 220, 220, 0.6);
+    opacity: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#precedent {
+    left: 0;
+}
+
+#suivant {
+    right: 0;
+}
+
+#slider:hover #precedent, #slider:hover #suivant {
+    opacity: 1;
+}
+
+#chart{
+    position: absolute;
+    top: 600px;
+}
+
+h2{
+    position: absolute;
+    top: 500px;
+}
